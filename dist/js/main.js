@@ -31,3 +31,24 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+
+$(document).ready(function() {
+  var options = [
+    {
+      selector: "#bio-image",
+      offset: 300,
+      callback: function(el) {
+        Materialize.showStaggeredList($(el));
+      }
+    },
+    {
+      selector: "#image-test",
+      offset: 300,
+      callback: function(el) {
+        Materialize.fadeInImage($(el));
+      }
+    }
+  ];
+
+  Materialize.scrollFire(options);
+});

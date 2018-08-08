@@ -28,40 +28,81 @@
                     <a href="index.html" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="about.html" class="nav-link">About Me</a>
+                    <a href="portfolio.html" class="nav-link">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a href="work.html" class="nav-link">My Work</a>
+                    <a href="reference.html" class="nav-link">Reference</a>
                 </li>
                 <li class="nav-item current">
-                    <a href="contact.html" class="nav-link">How To Reach Me</a>
+                    <a href="contact.html" class="nav-link">Contact Me</a>
                 </li>
+
             </ul>
         </nav>
     </header>
 
     <main id="contact">
-        <h1 class="lg-heading">
-            Contact
-            <span class="text-secondary">Me</span>
-        </h1>
-        <h2 class="sm-heading">
-            This is how you can reach me...
-        </h2>
+        <div class="xtra-des"></div>
+        <div class="logo">
+            <center>
+                <a href="index.html">
+                    <div class="logo-image"></div>
+                </a>
+            </center>
+        </div>
+        <br>
 
-        <div class="boxes">
-            <div>
-                <span class="text-secondary">Email:</span> ryan.hernandez013@gmail.com
+        <div class="contact-main">
+
+            <div class="label" id="cont-banner">
+                <h1 class="lg-heading">CONTACT
+                    <span class="text-secondary">ME</span>
+                </h1>
             </div>
 
-            <div>
-                <span class="text-secondary">Phone:</span> +63906-723-9240
+            <div class="cont-box1">
+                <h1 class="lg-heading">PHONE</h1>
+            </div>
+            <div class="cont-box2">
+                You can always reach me with my active phone number.
+                <h2>+63906-723-9240</h2>
+
+            </div>
+            <div class="cont-box3">
+                Or, send me an email in this address.
+                <h2>ryan.hernandez013@gmail.com</h2>
+            </div>
+            <div class="cont-box4">
+                <h1 class="lg-heading">EMAIL</h1>
+            </div>
+            <div class="map" id="map">
+                <script>
+                    function myMap() {
+                        // var mapCanvas = document.getElementById("map");
+                        // var mapOptions = {
+                        //     center: new google.maps.LatLng(14.6008752, 120.9784571, 19), zoom: 20
+                        // };
+                        // var map = new google.maps.Map(mapCanvas, center: mapOptions);
+
+                        var uluru = { lat: 14.6008752, lng: 120.9784571 };
+                        // The map, centered at Uluru
+                        var map = new google.maps.Map(
+                            document.getElementById('map'), { zoom: 18, center: uluru });
+                        // The marker, positioned at Uluru
+                        var marker = new google.maps.Marker({ position: uluru, map: map });
+                    }
+                </script>
+
+                <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
             </div>
 
-            <div>
-                <span class="text-secondary">Address:</span> T. Alonzo Street, Sta. Cruz, Manila 1006
+            <div class="addr">
+                I am currently chillin' around this area.
+                <h2>T. Alonzo St., Sta. Cruz, Manila 1006</h2>
+
             </div>
         </div>
+
     </main>
 
     <footer id="main-footer">

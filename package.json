@@ -9,6 +9,7 @@
   "author": "Adrian Hernandez",
   "license": "ISC",
   "dependencies": {
+    "materialize-css": "^0.100.2",
     "node-sass": "^4.9.2"
   }
 }
